@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Form page</title>
+        <link rel="stylesheet" type="text/css" href="form_style.css">
+    
+    </head>
+    <body>
+        <div>
+        <form action="/thankyou.html" method="post" target="_blank">
+            <fieldset>
+                <legend align="center">
+                    <h1>Survey Form</h1>
+                </legend>
+            <label for="name">Enter your name:
+                <input required type="text" id="name" placeholder="Itachi" />
+            </label>
+                <br><br>
+                <label for="email">Enter your e-mail i'd:
+                  <input required type="email" id="email" name="email" placeholder="itachi@gmail.com">
+                </label>
+                <br><br>
+                <label for="password">Enter your password(min 6 and max 15 characters):
+                    <input required type="password" id="password" minlength="6" maxlength="15" placeholder="Enter your password" />
+                  </label>
+                  <br><br>
+                <label for="age">Enter your age:
+                  <input type="number" id="age" required>
+                  <br><br>
+                  <label for="role">Which option best describe your current rate</label>
+                <select id="role" >
+                    <option value="student">student</option>
+                    <option value="teacher">Teacher</option>
+                    <option value="empolyee">empolyee</option>
+                </select>
+                <br><br>
+                <label for="recommendation">How likely is that you would recommmend this course to a friend?
+                    <br>
+                    <input type="radio" id="recommendation" name="course" value="Definitely">Definitely
+                </label><br>
+                <label for="recommendation">
+                    <input type="radio" id="recommendation" name="course" value="May be">May be
+                </label><br>
+                <label for="recommendation">
+                    <input type="radio" id="recommendation" name="course" value="Not sure">Not sure
+                </label><br>
+                <br><br>
+                <label for="like">What do like most in this course:</label>
+                <select id="like" >
+                    <option value="Interactive session">Interactive session</option>
+                    <option value="fun">fun</option>
+                    <option value="Way of explanation">Way of explanation</option>
+                </select>
+                <br><br>
+                <label for="checkbox">Things that should be improved in the future (click all that apply) <br>
+                    <input type="checkbox" value="yes">front-end projects <br>
+                    <input type="checkbox" value="yes">back-end projects <br>
+                    <input type="checkbox" value="yes">Data visualization <br>
+                </label>
+                <br><br>
+                <center>
+                <input type="submit" value="submit" >
+                    <input type="reset">
+                </center>
+            </fieldset>
+        </div>
+        </form>
+    </body>
+</html>
